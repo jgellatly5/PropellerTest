@@ -1,6 +1,7 @@
 package com.example.propellortest;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        fakeData = new String[] {"test1", "test2", "test3"};
+        fakeData = new String[] {"test1", "test2", "test3", "test4", "test5", "test6"};
 
         // specify an adapter (see also next example)
         mAdapter = new MedicineListAdapter(fakeData);
